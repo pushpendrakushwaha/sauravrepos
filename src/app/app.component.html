@@ -1,0 +1,21 @@
+<!-- <a routerLink="/upcommingMatches">Upcomming Matches</a>-->
+<!-- <router-outlet></router-outlet>  -->
+<!-- <app-nav></app-nav> -->
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <app-nav></app-nav>
+        </mat-menu>
+        <span>Home</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button [matMenuTriggerFor]="log"><i class="material-icons">account_circle</i></button>
+        <mat-menu #log="matMenu">
+            <button mat-menu-item routerLink="/app-login">Login</button>
+            <button mat-menu-item routerLink="/app-register">Register</button>
+        </mat-menu>  
+    </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

@@ -1,0 +1,18 @@
+.example-card {
+	background-color:cornsilk;
+	top: 1vh;
+    width: 40%;
+	margin: auto;
+}
+
+.example-full-width {
+	width: 100%;
+}
+
+.logbut {
+	margin: auto;
+}
+
+.image {
+	visibility: hidden;
+}
